@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project!
+# Command for build, deploy and delete
 
-This is a blank project for TypeScript development with CDK.
+```
+# Build TS script
+npm run build
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# Before first deployment, we need to install boostrap
+cdk bootstrap
 
-## Useful commands
+# Deploy stack
+cdk deploy
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+# Delete stack
+cdk destroy 
+```
